@@ -27,8 +27,8 @@ while True:
     if not ret:
         break
 
-    # Define region of interest (ROI) for hand (adjust as needed)
-    roi = frame[100:300, 100:300]  # y1:y2, x1:x2
+    
+    roi = frame[100:300, 100:300]  
 
     # Preprocess ROI
     img = cv2.resize(roi, (64, 64))  # Match training size
